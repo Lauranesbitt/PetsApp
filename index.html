@@ -7,12 +7,13 @@
     </head>
     
     <body>
-    <!--bootstrap-->
+        <div id='Dogs'></div><br>
+    
     <div class="container">
         <div class="row">
             <div class="col-sm-4">
                 <div class="jumbotron">
-                <!--<h2><a href="index.html">Home</a></h2>-->
+               <h2><a href="index.html">Home</a></h2>
                 <a href="index.html">
                     <img src="dog.jpg" alt="Dublin Dog Homes" style="width:100px;height:100px;">
                 </a>
@@ -35,7 +36,46 @@
                     <p>When you click 'Find a Home' or 'Register Your Home' this area will be update with information.</p>
                 </div>
                 </div>
-                
+                 <input type="button" onclick="previous()" value="<<">
+    <input type="button" onclick="next()" value=">>">
+    <script>
+        var i = 0;
+        displayDogs(i);
+        function displayDogs(i) {
+    var xmlhttp = new XMLHttpRequest();
+    xmlhttp.onreadystatechange = function() {
+        if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+            myFunction(xmlhttp, i);
+        }
+    };
+    xmlhttp.open("GET", "find.html", true);
+    xmlhttp.send();
+}
+function myFunction(xml, i) {
+    var xmlDoc = xml.responseXML; 
+    x = xmlDoc.getElementsByTagName("Dogs");
+    document.getElementById("showDogs").innerHTML =
+    "Dog: " +
+    x[i].getElementsByTagName("Size")[0].childNodes[0].nodeValue +
+    "<br>Size: " +
+    x[i].getElementsByTagName("Location")[0].childNodes[0].nodeValue +
+    "<br>Location: " + 
+    function next() {
+if (i < x.length-1) {
+  i++;
+  displayDogs(i);
+  }
+}
+
+function previous() {
+if (i > 0) {
+  i--;
+  displayDogs(i);
+  }
+}
+
+}
+</script>
             </div>
             
         
