@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml-stylesheet type="text/css" href="tasks.css" ?>
+<home>
+    <contact id="1">
+        <name>
+            <first>Kevin</first>
+            <last>Jones</last>
+        </name>
+        <address>
+            <street>1 Green Lane</street>
+            <town>Finglas</town>
+        </address>
+        <phone>
+            <landline>01 634 3848</landline>
+            <mobile>085 345 8988</mobile>
+        </phone>
+        <size>
+            <small/>
+            <!--<small></small>
+            <big></big>
+            <either></either>-->
+        </size>
+    </contact>
+    
+    <contact id="2">
+        <name>
+            <first>Laura</first>
+            <last>Brady</last>
+        </name>
+        <address>
+            <street>10 Yellow Road</street>
+            <town>Dundrum</town>
+        </address>
+        <phone>
+            <landline>01 589 4855</landline>
+            <mobile>086 445 4595</mobile>
+        </phone>
+        <size>
+            <big/>
+        </size>
+    </contact>
+    
+    <contact id="3">
+        <name>
+            <first>Tom</first>
+            <last>Fisher</last>
+        </name>
+        <address>
+            <street>384 Evergreen Terrace</street>
+            <town>Blanchardstown</town>
+        </address>
+        <phone>
+            <landline>01 393 4855</landline>
+            <mobile>085 692 3949</mobile>
+        </phone>
+        <size>
+            <either/>
+        </size>
+    </contact>
+    
+    <contact id="4">
+        <name>
+            <first>Jack</first>
+            <last>Noonan</last>
+        </name>
+        <address>
+            <street>77 Redstone Avenue</street>
+            <town>Blanchardstown</town>
+        </address>
+        <phone>
+            <landline>01 495 3434</landline>
+            <mobile>087 3123 2345</mobile>
+        </phone>
+        <size>
+            <either/>
+        </size>
+    </contact>
+    
+    <contact id="5">
+        <name>
+            <first>Sally</first>
+            <last>Smith</last>
+        </name>
+        <address>
+            <street>9 Brooklyn Street</street>
+            <town>Dundrum</town>
+        </address>
+        <phone>
+            <landline>01 120 2948</landline>
+            <mobile>086 2048 495</mobile>
+        </phone>
+        <size>
+            <small/>
+        </size>
+    </contact>
+</home>
