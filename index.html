@@ -10,8 +10,11 @@
     <script src="action.js"></script>
   </head>
   <body>
-    <h3><a href="find.xml">Find a Home</a></h3>
+    <!--<h3><a href="find.xml">Find a Home</a></h3>-->
     <!--<h3><a href="register.html">Register Your Home</a></h3>-->
+    <div class ="getRSS">
+      
+    </div>
     <div class="container">
       <div class="row">
         <div class="col-sm-4">
@@ -34,11 +37,6 @@
         <div class="col-sm-12">
           <div id="action">
             <p>When you click view dogs you will be able to see all the dogs that need a home, When you click view home you will be able to see all the homes available to take a dog</p>
-            <a href="find.xml">View dogs</a><br>
-           <p1>  <a href="home.xml">View Homes</a></p1>
-           <form action="home.asp">
-            <input type="submit" value="Submit">
-        </form>
           </div>
         </div>
       </div>
@@ -54,5 +52,17 @@
         </div>
       </div>
     </div>
+    <script>
+      function getRSS(){
+                document.getElementById('rssfeed').innerHTML = "";
+                $.get('rss.xml', function (data) {
+                    $(data).find("item").each(function () { //Searches through the rss.xml for any "item" tag
+                        var x = $(this);    //Stores the tag's contents in the variable x
+                        var myRSS = "<p>"+x.find("title").text()+" = "+x.find("content").text()+"<p>";  //Pulls out the needed information from the stored tag
+                        document.getElementById('rssfeed').innerHTML += myRSS;
+                    });
+                });
+            }
+    </script>
   </body>
 </html>

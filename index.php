@@ -1,34 +1,34 @@
-<?php 
+<?php
+$firstname = $_POST["firstname"];
+$lastname = $_POST["lastname"];
+$streetaddress = $_POST["streetaddress"];
+$town= $_POST["town"];
+$landline = $_POST["landline"];
+$mobile = $_POST["mobile"];
+
+if (file_exists('home.xml')) {
+    //loads the xml and returns a simplexml object
+    $xml = simplexml_load_file('home.xml');
+
+    //transforming the object in xml format
+    $xmlFormat = $xml->asXML();
+    //displaying the element in proper format
+    //adding new child to the xml
+    $newChild = $xml->addChild('name',$firstname);
+    $newChild->addChild('lastname', $lastname);
+    $newChild->addChild('street', $street);
+    $newChild->addChild('town', $town);
+    $newChild->addChild('landline', $landline);
+     $newChild->addChild('mobile', $mobile);
     
-
-// Load the XML source
-$xml = new DOMDocument;
-$xml->load('home.xml');
-$xsl = new DOMDocument;
-$xsl->substituteEntities = true; 
-$xsl->load('home.xsl');
-
-  if(isset($_REQUEST['ok'])){
-                $xml=DOMDocument("1,0","UTF-8");
-                $xml->load("home.xml");
-                $rootTag = $xml-> getElementsByTagName("document")->item(0);
-                $dataTag = $xml -> createElelment("home");
-                
-                 $aTag = $xml -> createElelment("a", $_REQUEST['b']);
-                  $bTag = $xml -> createElelment("b", $_REQUEST['b']);
-                  
-                  $dataTag->appendChild($aTag);
-                  $dataTag->appendChild($aTag);
-                  
-                  $rootTag->appendChild($dataTag);
-                  $mxl->save("home.xml");
-}
-
-?>
-        <form action ="home.xml" method ="post">
-        <input type = "text" name = "a"/>
-        <input type = "text" name = "b"/>
-        <input type = "submit" name = "ok" value = "add"/>
-        </form>
-      
   
+    //transforming the object in xml format
+    $xmlFormat = $xml->asXML();
+    //displaying the element in proper format
+    echo '<u><b>This is the xml code from home.xml with new elements added:</b></u>
+     <br /><br />
+     <pre>' . htmlentities($xmlFormat, ENT_COMPAT | ENT_HTML401, "ISO-8859-1") . '</pre>';
+
+ file_put_contents('/home/ubuntu/workspace/home.xml', $xml->asXML());
+}
+?>

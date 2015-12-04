@@ -23,4 +23,4 @@
         <mobile>430390399349<br/></mobile>
     </home>
 </catalog>
-</xsl:stylesheet>
+<xsl:firstname><xsl:lastname/><xsl:streetaddress/><xsl:town/><xsl:landline/><xsl:mobile/></xsl:firstname></xsl:stylesheet>

@@ -8,7 +8,7 @@
             <title>Find a Home</title>
               <!-- 1. All Homes -->
             <h2>All Homes:</h2>
-            <xsl:apply-templates select="//document"/>
+            <xsl:apply-templates select="//catalog"/>
         </head>
         <body>
           
