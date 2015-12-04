@@ -31,4 +31,19 @@ if (file_exists('home.xml')) {
 
  file_put_contents('/home/ubuntu/workspace/home.xml', $xml->asXML());
 }
+  writeRSS();
+    function writeRSS(){
+        if (file_exists('rss.xml')) {
+            //loads the xml and returns a simplexml object
+            $rssxml = simplexml_load_file('rss.xml');
+            $newChild = $rssxml->channel->addChild('item');
+            $newChild->addChild('title', $author);
+            $newChild->addChild('street', $street);
+            $newChild->addChild('town', $town);
+            $newChild->addChild('landline', $landline);
+            $newChild->addChild('mobile', $mobile);
+            file_put_contents('/home/ubuntu/workspace/rss.xml', $rssxml->asXML());
+        }
+    }
+            
 ?>

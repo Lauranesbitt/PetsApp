@@ -12,9 +12,10 @@
   <body>
     <!--<h3><a href="find.xml">Find a Home</a></h3>-->
     <!--<h3><a href="register.html">Register Your Home</a></h3>-->
-    <div class ="getRSS">
+    <div id ="getRSS">
       
     </div>
+    
     <div class="container">
       <div class="row">
         <div class="col-sm-4">
@@ -52,8 +53,8 @@
         </div>
       </div>
     </div>
-    <script>
-      function getRSS(){
+   <script>
+            function getRSS(){
                 document.getElementById('rssfeed').innerHTML = "";
                 $.get('rss.xml', function (data) {
                     $(data).find("item").each(function () { //Searches through the rss.xml for any "item" tag
@@ -63,6 +64,6 @@
                     });
                 });
             }
-    </script>
+       </script>
   </body>
 </html>

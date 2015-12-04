@@ -14,25 +14,42 @@
 			<body>
 				<!--Print all homes-->
 				<h2>All Homes</h2>
-				<div style="background-color:teal;color:white;padding:4px">
-				    <span style="font-weight:bold">Name:<xsl:apply-templates select="//home/contact/name"/></span>
-    			</div>
-    			<div>
-				    <span style="font-weight:bold">Address:<xsl:apply-templates select="//home/contact/address"/></span>
-    			</div>
-
+					<!--<div style="background-color:teal;color:white;padding:4px">-->
+					<div style="background-color:#BFBFBF;">
+					    <span style="font-weight:bold"><xsl:apply-templates select="//home/contact"/><xsl:apply-templates/></span>
+					</div>
+				    
+    		
 			</body>
 		</html>
 	</xsl:template>
 	
 	<!--Name-->
 	<xsl:template match="name">
+		<p style="background-color:teal;color:white;padding:4px">
+		<xsl:value-of select="."/>
+		</p>
+	</xsl:template>
+	<!--Street-->
+	<xsl:template match="street">
 		<p>
 		<xsl:value-of select="."/>
 		</p>
 	</xsl:template>
-	<!--Address-->
-	<xsl:template match="address">
+	<!--Town-->
+	<xsl:template match="town">
+		<p>
+		<xsl:value-of select="."/>
+		</p>
+	</xsl:template>
+	<!--Landline-->
+	<xsl:template match="landline">
+		<p>
+		<xsl:value-of select="."/>
+		</p>
+	</xsl:template>
+	<!--Mobile-->
+	<xsl:template match="mobile">
 		<p>
 		<xsl:value-of select="."/>
 		</p>
