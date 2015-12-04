@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <!--add favicon-->
     <title>Dublin Dog Homes</title>
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
     <link rel="stylesheet" type="style/css" href="css/bootstrap-theme.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-      <script src="action.js"></script>
+    <script src="action.js"></script>
   </head>
   <body>
     <div class="container">
@@ -28,10 +29,13 @@
       </div>
       <div class="row">
         <div class="col-sm-12">
-          <div class="jumbotron">
+          <div id="action">
             <p>When you click view dogs you will be able to see all the dogs that need a home, When you click view home you will be able to see all the homes available to take a dog</p>
-            <a href="find.xml">View dogs</a><br/>
+            <a href="find.xml">View dogs</a><br>
            <p1>  <a href="home.xml">View Homes</a></p1>
+           <form action="home.asp">
+           <input type="submit" value="Submit">
+        </form>
           </div>
         </div>
       </div>
