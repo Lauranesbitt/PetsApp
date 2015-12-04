@@ -1,6 +1,7 @@
 <xsl:stylesheet version="1.0" 
 xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
-<catalog>
+<document>
+    <catalog>
     <home id= "Johnson">
         <name>Emily<br/></name>
         <Phone>0879374353<br/></Phone>
@@ -8,13 +9,16 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
     </home>
     <home id= "Mahon">
         <name><br/><p2>Peter</p2><br/></name>
-        <Phone><br/>Large<br/></Phone>
+        <Phone><br/>67875564<br/></Phone>
         <location><br/>Kerry<br/></location>
     </home>
     <home id= "Connor">
         <name><br/> <p3>Michael </p3></name>
-        <Phone><br/>Medium<br/></Phone>
+        <Phone><br/>5655445664<br/></Phone>
         <location><br/>Wexford<br/></location>
     </home>
 </catalog>
+
+    
+</document>
 </xsl:stylesheet>

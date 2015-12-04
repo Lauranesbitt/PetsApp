@@ -1,26 +1,4 @@
-.name {
+#find:hover, #register:hover{
+    cursor:pointer;
     color:blue;
-    
-}
-.size {
-    color:blue;
-    
-}
-.Loction{
-    color:blue;
-    
-}
-.phone {
-    color:blue;
-    
-}
-
-.red {
-    background-color; red:
-}
-
-.stn {
-    height; 100%;
-    
-    
 }

@@ -1,18 +1,23 @@
 $(document).ready(function(){
     $(".jumbotron").mouseenter(function(){
-        $(this).animate({height: '+=5px'});
+        $(this).animate({height: '+=7px'});
     });
     $(".jumbotron").mouseleave(function(){
-        $(this).animate({height: '-=5px'});
+        $(this).animate({height: '-=7px'});
      });
-     $('#action').click(function(){
-         function loadPhp(){
+     $('#find').click(function(){
              $.ajax({
                  url:"index.php"
              }).done(function(data){
                  $('#action').html(data);
              });
-         };
+     });
+     $('#register').click(function(){
+             $.ajax({
+                 url:"register.html"
+             }).done(function(data){
+                 $('#action').html(data);
+             });
      });
     /*$("#find").mouseenter(function(){
         $(this).animate({height: '+=10px'
