@@ -1,4 +1,7 @@
-<!DOCTYPE html>
+<?php
+echo "howya"
+?>
+<!--<!DOCTYPE html>
 <hmtl>
     <head>
         <title>Includes</title>
@@ -7,4 +10,4 @@
     <body>
         test 
     </body>
-</html>
+</html>-->

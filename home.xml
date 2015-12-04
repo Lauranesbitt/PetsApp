@@ -16,6 +16,5 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
         <Phone><br/>Medium<br/></Phone>
         <location><br/>Wexford<br/></location>
     </home>
-    
 </catalog>
 </xsl:stylesheet>
