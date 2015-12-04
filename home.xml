@@ -4,21 +4,25 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
     <catalog>
     <home id= "Johnson">
         <name>Emily<br/></name>
-        <Phone>0879374353<br/></Phone>
-        <location>Dublin<br/></location>
+        <streetaddress>2848 main street</streetaddress>
+        <town>ennis</town>
+        <landline>374353<br/></landline>
+        <mobile>452728238<br/></mobile>
     </home>
     <home id= "Mahon">
         <name><br/><p2>Peter</p2><br/></name>
-        <Phone><br/>67875564<br/></Phone>
-        <location><br/>Kerry<br/></location>
+        <streetaddress>28 high street</streetaddress>
+        <town>swordss</town>
+        <landline>473633<br/></landline>
+        <mobile>9583473544<br/></mobile>
     </home>
     <home id= "Connor">
         <name><br/> <p3>Michael </p3></name>
-        <Phone><br/>5655445664<br/></Phone>
-        <location><br/>Wexford<br/></location>
+        <streetaddress>4563 seaview</streetaddress>
+        <town>kinseley</town>
+        <landline>7494858<br/></landline>
+        <mobile>430390399349<br/></mobile>
     </home>
 </catalog>
-
-    
 </document>
 </xsl:stylesheet>

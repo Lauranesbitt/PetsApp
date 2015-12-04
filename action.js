@@ -7,7 +7,7 @@ $(document).ready(function(){
      });
      $('#find').click(function(){
              $.ajax({
-                 url:"index.php"
+                 url:"data.php"
              }).done(function(data){
                  $('#action').html(data);
              });
