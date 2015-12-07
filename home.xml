@@ -1,26 +1,36 @@
-<?xml version="1.0"?>
-<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
-<catalog>
-    <home id="Johnson">
-        <name>Emily<br/></name>
-        <streetaddress>2848 main street</streetaddress>
-        <town>ennis</town>
-        <landline>374353<br/></landline>
-        <mobile>452728238<br/></mobile>
-    </home>
-    <home id="Mahon">
-        <name><br/><p2>Peter</p2><br/></name>
-        <streetaddress>28 high street</streetaddress>
-        <town>swordss</town>
-        <landline>473633<br/></landline>
-        <mobile>9583473544<br/></mobile>
-    </home>
-    <home id="Connor">
-        <name><br/> <p3>Michael </p3></name>
-        <streetaddress>4563 seaview</streetaddress>
-        <town>kinseley</town>
-        <landline>7494858<br/></landline>
-        <mobile>430390399349<br/></mobile>
-    </home>
-</catalog>
-<xsl:name>hi<xsl:lastname>im</xsl:lastname><xsl:street/><xsl:town>up</xsl:town><xsl:landline>555</xsl:landline><xsl:mobile>666</xsl:mobile></xsl:name><xsl:name>j<xsl:lastname>j</xsl:lastname><xsl:street/><xsl:town>j</xsl:town><xsl:landline>j</xsl:landline><xsl:mobile>j</xsl:mobile></xsl:name><xsl:name>h<xsl:lastname>h</xsl:lastname><xsl:street/><xsl:town>h</xsl:town><xsl:landline>h</xsl:landline><xsl:mobile>h</xsl:mobile></xsl:name></xsl:stylesheet>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml-stylesheet type="text/xsl" href=homes.xsl "?>
+<homes>
+<home>
+    <name>David Kelly</name>
+    <description>I really like dogs</description>
+    <homedesc>I have a small home</homedesc>
+    <location>Dublin</location>
+    <smalldogs>on</smalldogs>
+    <largedogs/>
+</home>
+<home>
+    <name>Laura</name>
+    <description>rich af</description>
+    <homedesc>mansion</homedesc>
+    <location>poshville</location>
+    <smalldogs>on</smalldogs>
+    <largedogs/>
+</home>
+<home>
+    <name>Kevin</name>
+    <description>minion</description>
+    <homedesc>evil lab</homedesc>
+    <location>gru's house </location>
+    <smalldogs/>
+    <largedogs>on</largedogs>
+</home>
+<home>
+    <name>sam</name>
+    <description>cute</description>
+    <homedesc>dog pad</homedesc>
+    <location>NCI</location>
+    <smalldogs>on</smalldogs>
+    <largedogs>on</largedogs>
+</home>
+<home><name>Jim</name><description>Caring</description><homedesc>Massive</homedesc><location>Dundrum</location><smalldogs/><largedogs>on</largedogs></home><home><name>bob</name><description>minion</description><homedesc>evil lab</homedesc><location>gru's house </location><smalldogs/><largedogs>on</largedogs></home><home><name>David Kelly</name><description>I love loads of dogs</description><homedesc>I have an apartment</homedesc><location>Dublin</location><smalldogs/><largedogs>on</largedogs></home><home><name>David Kelly</name><description>I love loads of dogs</description><homedesc>I have an apartment</homedesc><location>Dublin</location><smalldogs/><largedogs>on</largedogs></home></homes>

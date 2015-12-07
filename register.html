@@ -1,47 +1,35 @@
 <!DOCTYPE html>
 <html>
-      <head>
-          <title>Register</title>
-           
-          <a href = "rss.xml"> </a>
-          <a href ="index.php"></a>
-      </head>
-      <body>
-            <h1>Register Your Home</h1>
-            <h2>To express your interest in adding your home to our database of homes.</h2>
-           <form action="index.php" method="post">
-                  <fieldset>
-                      <legend>Personal information:</legend>
-                      First name:<br>
-                      <input type="text" name="firstname" required="true">
-                      <br>
-                      Last name:<br>
-                      <input type="text" name="lastname" required="true">
-                      <br>
-                      Street Address:<br>
-                      <input type="text" name="street" required="true">
-                      <br>
-                      Town:<br>
-                      <input type="text" name="town" required="true">
-                      <br>
-                      Landline:<br>
-                      <input type="text" name="landline">
-                      <br>
-                      Mobile:<br>
-                      <input type="text" name="mobile" required="true">
-                      <br>
-                      Dog size:<br>
-                       <input type="radio" name="size" value="small">Small
-                        <br>
-                        <input type="radio" name="size" value="big">Big
-                        <br>
-                        <input type="radio" name="size" value="either">Either
-                      <br><br>
-                      <input type="submit" value="Submit">
-                          
 
-                  </fieldset>
-            </form>
+<head>
+    <title>Register</title>
+</head>
+
+<body>
+    <form id="reg" action="index.php" method="post">
+        <label for="name">Your Name</label>
+        <input type="text" name="name" />
+        
+        <label for="desc">Describe Yourself</label>
+        <input type="text" name="desc" />
             
-      </body>
+        <label for="desc">Home Description</label>
+        <input type="text" name="homedesc" />
+
+        <label for="desc">Location</label>
+        <input type="text" name="location" />
+
+
+        <label for="desc">Small Dogs</label>
+        <input type="checkbox" name="smalldogs" />
+
+        <label for="desc">Large Dogs</label>
+        <input type="checkbox" name="largedogs" />
+
+
+        <input type="submit" value="Submit" />
+
+    </form>
+</body>
+
 </html>

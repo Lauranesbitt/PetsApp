@@ -1,14 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0">
-<channel>
-    <title>home page</title>
-    <link>https://wadproject-lauranesbitt.c9users.io/index.html</link>
-    <description>Find houses that will take a dog in.</description>
-      <item>
-        <title>Update</title>
-        <link>https://wadproject-lauranesbitt.c9users.io/home.xml</link>
-        <description>homes update</description>
-      </item>
-<item><title/><street/><town/><landline/><mobile/></item><item><title/><street/><town/><landline/><mobile/></item><item><title/><street/><town/><landline/><mobile/></item></channel>
-
+    <channel>
+  <item><name>David Kelly</name><description/><homedesc>I have a small home</homedesc><location>Dublin</location><smalldogs>on</smalldogs><largedogs/></item><item><name>Laura</name><description/><homedesc>mansion</homedesc><location>poshville</location><smalldogs>on</smalldogs><largedogs/></item><item><name>Kevin</name><description/><homedesc>evil lab</homedesc><location>gru's house </location><smalldogs/><largedogs>on</largedogs></item><item><name>sam</name><description/><homedesc>dog pad</homedesc><location>NCI</location><smalldogs>on</smalldogs><largedogs>on</largedogs></item><item><name>Jim</name><description/><homedesc>Massive</homedesc><location>Dundrum</location><smalldogs/><largedogs>on</largedogs></item><item><name>bob</name><description/><homedesc>evil lab</homedesc><location>gru's house </location><smalldogs/><largedogs>on</largedogs></item><item><name>David Kelly</name><description/><homedesc>I have an apartment</homedesc><location>Dublin</location><smalldogs/><largedogs>on</largedogs></item><item><name>David Kelly</name><description/><homedesc>I have an apartment</homedesc><location>Dublin</location><smalldogs/><largedogs>on</largedogs></item></channel>
 </rss>
